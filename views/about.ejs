@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | My Portfolio</title>
+
+  <!-- Bootstrap + Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body class="bg-light">
+  <%- include('partials/_header') %>
+
+  <main class="container py-4">
+    <header class="mb-4">
+      <h1>About Me</h1>
+    </header>
+
+    <section class="bio d-flex flex-column flex-md-row align-items-start gap-4 mb-5">
+      <img src="/images/hassaanimage.jpg" alt="A picture of Hassaan Muhammad" class="profile-photo img-fluid rounded" style="max-width: 260px;">
+      <div class="bio-text">
+        <h2>About Me</h2>
+        <p>Hi! I'm Hassaan — a 2nd year Networking and IT Security student at Ontario Tech University.</p>
+        <p>I enjoy creating projects that combine creativity with functionality.</p>
+        <p>You can check out some of my <a href="/projects">projects</a> here!</p>
+        <p>In my free time, I like learning new concepts, solving challenges, and collaborating creatively on projects.</p>
+      </div>
+    </section>
+
+    <section class="video-name">
+      <h2 class="mb-3">Introduction Video</h2>
+      <!-- If your video is large, consider compressing it. Place it under /public/videos/ -->
+      <video controls poster="/images/aboutmethumb.JPG" style="width:100%;height:auto;">
+        <source src="/videos/aboutme.mp4" type="video/mp4">
+        Your browser does not support the video being played.
+      </video>
+    </section>
+  </main>
+
+  <%- include('partials/_footer') %>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+</body>
+</html>
